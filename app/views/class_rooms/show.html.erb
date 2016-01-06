@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @class_room.student.name %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @class_room.course.name %>
+</p>
+
+<p>
+  <strong>Entry at:</strong>
+  <%= @class_room.entry_at %>
+</p>
+
+<%= link_to 'Edit', edit_class_room_path(@class_room) , :class => "btn btn-warning"%> |
+<%= link_to 'Back', class_rooms_path, :class => "btn btn-danger"%>
